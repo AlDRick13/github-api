@@ -28,8 +28,8 @@ const Followers = () => {
   }, [user]);
 console.log(user);
   return (
-    <div>
-      <h2>Followers</h2>
+    <div  className="text-center pt-5 pb-5">
+      <h2  className="text-second_orange text-3xl font-bold">Followers</h2>
 
       {followers && followers.length > 0 && !loader ? (
         followers.map(user => (
