@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Repos = ({repoName, description, language}) => {
-            {/* <h1>{repoName}</h1> */}
 
 
     return (

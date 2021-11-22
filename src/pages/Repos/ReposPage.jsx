@@ -18,7 +18,7 @@ const ReposPage = () => {
 
         }
         handleUserRepos()
-    }, [])
+    }, [user])
 
     return (
         <div  className="text-center pt-5 pb-5">
