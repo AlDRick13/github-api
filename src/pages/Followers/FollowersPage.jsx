@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import GithubUser from "../../components/custom/GithubUser/GithubUser";
 import Loader from "../../components/custom/Loader/Loader";
 
-const Followers = () => {
+const FollowersPage = () => {
   //Hooks
   const { user } = useParams();
   //State
@@ -29,7 +29,7 @@ const Followers = () => {
 console.log(user);
   return (
     <div  className="text-center pt-5 pb-5">
-      <h2  className="text-second_orange text-3xl font-bold">Followers</h2>
+      <span  className="text-second_orange text-5xl font-bold">Followers</span>
 
       {followers && followers.length > 0 && !loader ? (
         followers.map(user => (
@@ -46,4 +46,4 @@ console.log(user);
   );
 };
 
-export default Followers;
+export default FollowersPage;

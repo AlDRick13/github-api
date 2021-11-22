@@ -4,7 +4,7 @@ import GithubUser from '../../components/custom/GithubUser/GithubUser'
 import UserForm from '../../components/Home/Form/UserForm';
 import Loader from "../../components/custom/Loader/Loader";
 
-const Home = () => {
+const HomePage = () => {
     //State
    const [userName, setUserName] = useState("");
    const [userInformation, setUserInformation] = useState(null);
@@ -51,4 +51,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default HomePage;

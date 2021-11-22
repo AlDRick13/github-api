@@ -4,9 +4,9 @@ import './App.css';
 //layuot
 import MainLayout from './layouts/MainLayout';
 //pages
-import Home from './pages/Home/Home';
-import Followers from "./pages/Followers/Followers";
-
+import HomePage from './pages/Home/HomePage';
+import FollowersPage from "./pages/Followers/FollowersPage";
+import ReposPage from "./pages/Repos/ReposPage";
 function App() {
    
   return (
@@ -15,11 +15,17 @@ function App() {
       <Switch>
         <MainLayout>
           <Route path="/" exact>
-            <Home/>
+            <HomePage/>
           </Route>
-          <Route path="/followers/:user" exact>
-          <Followers />
+
+          <Route path="/:user/followers" exact>
+          <FollowersPage />
           </Route>
+
+          <Route path="/:user/repos" exact>
+          <ReposPage />
+          </Route>
+
         </MainLayout>
       </Switch>
      </BrowserRouter>
